@@ -1,0 +1,10 @@
+.adder-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adder-component {
+    cursor: pointer;
+    height: 30px;
+    width: calc(100% / 6);
+}

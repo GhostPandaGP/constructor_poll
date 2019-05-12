@@ -1,5 +1,6 @@
 import React, { Component} from "react";
 import "./style.css";
+import Loader from "../Loader";
 
 class Onelist extends Component{
     constructor(props) {
@@ -10,13 +11,54 @@ class Onelist extends Component{
     }
 
     render() {
-        return (
-            <div>
-                <input type="radio" name="gender" value="male"/> <label htmlFor="">Male</label>    <br/>
-                    <input type="radio" name="gender" value="female"/> <label htmlFor="">FeMale</label> <br/>
-                        <input type="radio" name="gender" value="other"/> <label htmlFor="">Other</label>
-            </div>
-        )
+        if (this.props.data) {
+            return (
+                <div>
+                    <p>{this.props.data.title.value}</p>
+                    {this.props.data.options.map((radio, index) => {
+                        let id = "onelist_" + this.props.id;
+
+                        if (radio.title === "Other") {
+                            return (
+                                <div key={id + `_${index}`}>
+                                    <input id={id + `_${index}` + "_0"}
+                                           type="radio"
+                                           name={id}
+                                           value={radio.title.toLowerCase()}
+                                    />
+                                    <label htmlFor={id + `_${index}` + "_0"}>
+                                        {radio.title}
+                                    </label>
+                                    <input id={id + `_${index}` + "_1"}
+                                           type="text"
+                                           placeholder={radio.title}
+                                    />
+                                </div>
+                            )
+                        }
+                        return (
+                            <div key={id +  `_${index}`}>
+                                <input id={id + `_${index}` + "_0"}
+                                       type="radio"
+                                       name={id}
+                                       value={radio.title.toLowerCase()}
+                                />
+                                <label htmlFor={id + `_${index}` + "_0"}>
+                                    {radio.title}
+                                </label>
+                            </div>
+                        )
+                    })}
+                </div>
+            )
+        } else {
+            return (
+                <div>
+                    <Loader/>
+                </div>
+            )
+        }
+
     }
 }
 

@@ -3,9 +3,7 @@ import './App.css';
 import { connect } from "react-redux";
 import { surveysFetchData } from "../actions/surveys";
 
-import Input from "../components/Input";
 import Constructor from "../components/Constructor";
-import Textarea from "../components/Textarea";
 
 class App extends Component {
     componentDidMount() {
@@ -15,10 +13,7 @@ class App extends Component {
   render() {
       return (
           <div>
-              <Input title={"Lable"} subtitle={"subtitle"} placeholder={"placeholder"}/>
-              <Textarea/>
               <Constructor/>
-
             <ul>
               {/*{this.props.surveys.map((survey, index) => {*/}
                 {/*return <li key={survey._id}>*/}

@@ -1,5 +1,6 @@
 import React, { Component} from "react";
 import "./style.css";
+import Loader from "../Input";
 
 class Multilist extends Component{
     constructor(props) {
@@ -8,15 +9,29 @@ class Multilist extends Component{
 
         }
     }
-
     render() {
-        return (
-            <div>
-                <input type="checkbox" name="vehicle1" value="Bike"/> I have a bike<br/>
-                <input type="checkbox" name="vehicle2" value="Car"/> I have a car<br/>
-                <input type="checkbox" name="vehicle3" value="Boat" checked/> I have a boat<br/>
-            </div>
-        )
+        if (this.props.data) {
+            return (
+                <div>
+                    {console.log(this.props.data)}
+
+                    <p>{this.props.data.title.value}</p>
+                    {this.props.data.options.map((option, index) => {
+                        let id = "multilist_" + this.props.index;
+                        return <div key={id + `_${index}`}>
+                            <input id={id + `_${index}`} type="checkbox" name={id} value={option.title}/> <label htmlFor={id + `_${index}`}>{option.title}</label>
+                        </div>
+                    })}
+
+                </div>
+            )
+        } else {
+            return (
+                <div>
+                    <Loader/>
+                </div>
+            )
+        }
     }
 }
 
