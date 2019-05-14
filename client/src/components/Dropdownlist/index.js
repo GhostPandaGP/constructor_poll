@@ -22,7 +22,7 @@ class Dropdownlist extends Component{
                     {console.log(this.props.data)}
                     <p>{this.props.data.title.value}</p>
                     {<Subtitle data={this.props.data.subtitle.value}/>}
-                    <select multiple={false}>
+                    <select multiple={false} className={"dropdownlist_select"}>
                         {this.props.data.options.map((option, index) => {
                             let id = "dropdownlist_" + this.props.index + `_${index}`;
                             return <option value={option.title} key={id}>{option.title}</option>

@@ -20,7 +20,7 @@ class Textarea extends Component{
                     {console.log("textarea - true - ", this.props.data)}
                     <div><label htmlFor={id}>{data.title.value}</label></div>
                     <div><small><label htmlFor={id}>{data.subtitle.value}</label></small></div>
-                    <div><textarea id={id} type="text" name={id} cols={data.options.cols} rows={data.options.rows} placeholder={data.options.placeholder}/></div>
+                    <div><textarea className={"textarea_textarea"} id={id} type="text" name={id} cols={data.options.cols} rows={data.options.rows} placeholder={data.options.placeholder}/></div>
                 </div>
             )
         } else {
