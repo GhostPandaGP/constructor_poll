@@ -12,8 +12,11 @@ class App extends Component {
 
   render() {
       return (
-          <div>
-              <Constructor/>
+          <div className={"app"}>
+              <div className="app_wrapper">
+                  <Constructor/>
+              </div>
+
             <ul>
               {/*{this.props.surveys.map((survey, index) => {*/}
                 {/*return <li key={survey._id}>*/}
