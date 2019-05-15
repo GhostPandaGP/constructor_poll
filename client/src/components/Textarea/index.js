@@ -15,12 +15,17 @@ class Textarea extends Component{
         if (this.props.data) {
             const data = this.props.data;
             const id = "textarea_" + this.props.index;
+            const Subtitle = this.props.data.subtitle.value ?
+                (props) => {return (<div className={"textarea_subtitle"}>{props.data}</div>)}  :
+                (props) => {console.warn("warn", props);
+                    return ""};
+
             return (
-                <div>
+                <div className={"textarea"}>
                     {console.log("textarea - true - ", this.props.data)}
-                    <div><label htmlFor={id}>{data.title.value}</label></div>
-                    <div><small><label htmlFor={id}>{data.subtitle.value}</label></small></div>
-                    <div><textarea className={"textarea_textarea"} id={id} type="text" name={id} cols={data.options.cols} rows={data.options.rows} placeholder={data.options.placeholder}/></div>
+                    <div className={"textarea_title"}><label htmlFor={id}>{data.title.value}</label></div>
+                    {<Subtitle data={this.props.data.subtitle.value}/>}
+                    <div className={"textarea_textarea_box"}><textarea className={"textarea_textarea"} id={id} type="text" name={id} cols={data.options.cols} rows={data.options.rows} placeholder={data.options.placeholder}/></div>
                 </div>
             )
         } else {

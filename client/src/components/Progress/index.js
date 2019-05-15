@@ -12,7 +12,7 @@ class Progress extends Component{
     render() {
         if (this.props.data) {
             const Subtitle = this.props.data.subtitle.value ?
-                (props) => {return (<div>{props.data}</div>)}  :
+                (props) => {return (<div className={"progress_subtitle"}>{props.data}</div>)}  :
                 (props) => {console.warn("warn", props);
                     return ""};
 
@@ -28,7 +28,7 @@ class Progress extends Component{
             return (
                 <div className="progress">
                     <div className="progress_box">
-                        <p>{this.props.data.title.value}</p>
+                        <div className={"progress_title"}>{this.props.data.title.value}</div>
                         {<Subtitle data={this.props.data.subtitle.value}/>}
                         <div className={"progress_rating"}>
                             {arr.map((value, index) => {

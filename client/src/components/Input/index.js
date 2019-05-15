@@ -38,12 +38,17 @@ class Input extends Component{
         if (this.props.data) {
             const data = this.props.data;
             const id = "input_" + this.props.index;
+            const Subtitle = this.props.data.subtitle.value ?
+                (props) => {return (<div className={"input_small_label"}>{props.data}</div>)}  :
+                (props) => {console.warn("warn", props);
+                    return ""};
+
             return (
                 <div>
                     {console.log("input - true - ", this.props.data)}
-                    <div><label htmlFor={id}>{data.title.value}</label></div>
-                    <div><small><label htmlFor={id}>{data.subtitle.value}</label></small></div>
-                    <div><input id={id} type="text" placeholder={data.options.placeholder}/></div>
+                    <div className={"input_label"}><label htmlFor={id}>{data.title.value}</label></div>
+                    {<Subtitle data={this.props.data.subtitle.value}/>}
+                    <div className={"input_box_input"}><input className={"input_input"} id={id} type="text" placeholder={data.options.placeholder}/></div>
                 </div>
             )
         } else {

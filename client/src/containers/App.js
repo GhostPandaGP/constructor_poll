@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { surveysFetchData } from "../actions/surveys";
 
 import Constructor from "../components/Constructor";
+import Constructorlayout from "../components/Constructorlayout";
 
 class App extends Component {
     componentDidMount() {
@@ -13,27 +14,27 @@ class App extends Component {
   render() {
       return (
           <div className={"app"}>
-              <div className="app_wrapper">
-                  <Constructor/>
-              </div>
-
-            <ul>
-              {/*{this.props.surveys.map((survey, index) => {*/}
-                {/*return <li key={survey._id}>*/}
-                  {/*<div>Name is: {survey.name}</div>*/}
-                  {/*<div>Number is: {survey.number}</div>*/}
-                  {/*<div>Title is: {survey.title}</div>*/}
-                  {/*<div>Comment is: {survey.comment}</div>*/}
-                      {/*/!*{survey.map((sur, index) => {*!/*/}
-                        {/*/!*return <div>*!/*/}
-                          {/*/!*{index} = {sur}*!/*/}
-                        {/*/!*</div>*!/*/}
-                      {/*/!*})}*!/*/}
-                {/*</li>*/}
-              {/*})}*/}
-            </ul>
-
+              <Constructorlayout main={<Constructor/>}/>
           </div>
+
+          // <div className={"app"}>
+          //   <ul>
+          //     {/*{this.props.surveys.map((survey, index) => {*/}
+          //       {/*return <li key={survey._id}>*/}
+          //         {/*<div>Name is: {survey.name}</div>*/}
+          //         {/*<div>Number is: {survey.number}</div>*/}
+          //         {/*<div>Title is: {survey.title}</div>*/}
+          //         {/*<div>Comment is: {survey.comment}</div>*/}
+          //             {/*/!*{survey.map((sur, index) => {*!/*/}
+          //               {/*/!*return <div>*!/*/}
+          //                 {/*/!*{index} = {sur}*!/*/}
+          //               {/*/!*</div>*!/*/}
+          //             {/*/!*})}*!/*/}
+          //       {/*</li>*/}
+          //     {/*})}*/}
+          //   </ul>
+          //
+          // </div>
       )
     }
 }

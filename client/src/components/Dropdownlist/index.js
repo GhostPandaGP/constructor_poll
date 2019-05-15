@@ -13,21 +13,23 @@ class Dropdownlist extends Component{
     render() {
         if (this.props.data) {
             const Subtitle = this.props.data.subtitle.value ?
-                (props) => {return (<div>{props.data}</div>)}  :
+                (props) => {return (<div className={"drop__down__list_subtitle"}>{props.data}</div>)}  :
                 (props) => {console.warn("warn", props);
                             return ""};
 
             return (
-                <div>
+                <div className={"drop__down__list_wrapper"}>
                     {console.log(this.props.data)}
-                    <p>{this.props.data.title.value}</p>
+                    <div className={"drop__down__list_title"}>{this.props.data.title.value}</div>
                     {<Subtitle data={this.props.data.subtitle.value}/>}
-                    <select multiple={false} className={"dropdownlist_select"}>
-                        {this.props.data.options.map((option, index) => {
-                            let id = "dropdownlist_" + this.props.index + `_${index}`;
-                            return <option value={option.title} key={id}>{option.title}</option>
-                        })}
-                    </select>
+                    <div className="drop__down__list_select-wrapper">
+                        <select multiple={false} className={"drop__down__list_select"}>
+                            {this.props.data.options.map((option, index) => {
+                                let id = "dropdownlist_" + this.props.index + `_${index}`;
+                                return <option value={option.title} key={id}>{option.title}</option>
+                            })}
+                        </select>
+                    </div>
                 </div>
             )
         } else {

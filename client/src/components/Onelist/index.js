@@ -12,15 +12,43 @@ class Onelist extends Component{
 
     render() {
         if (this.props.data) {
+            const Subtitle = this.props.data.subtitle.value ?
+                (props) => {return (<div className={"one__list_subtitle"}>{props.data}</div>)}  :
+                (props) => {console.warn("warn", props);
+                    return ""};
+
             return (
                 <div>
-                    <p>{this.props.data.title.value}</p>
-                    {this.props.data.options.map((radio, index) => {
-                        let id = "onelist_" + this.props.id;
+                    <div className={"one__list_title"}>{this.props.data.title.value}</div>
+                    {<Subtitle data={this.props.data.subtitle.value}/>}
+                    <div className={"one__list_radio_box"}>
+                        {this.props.data.options.map((radio, index) => {
+                            let id = "onelist_" + this.props.id;
 
-                        if (radio.title === "Other") {
+                            if (radio.title === "Other") {
+                                return (
+                                    <div key={id + `_${index}`}>
+                                        <input id={id + `_${index}` + "_0"}
+                                               type="radio"
+                                               name={id}
+                                               value={radio.title.toLowerCase()}
+                                        />
+                                        <label htmlFor={id + `_${index}` + "_0"}>
+                                            {radio.title}
+                                        </label>
+                                        <div className="one__list_radio_input_text_box">
+                                            <input id={id + `_${index}` + "_1"}
+                                                   type="text"
+                                                   className={"one__list_radio_input_text"}
+                                                   placeholder={radio.title}
+                                            />
+                                        </div>
+
+                                    </div>
+                                )
+                            }
                             return (
-                                <div key={id + `_${index}`}>
+                                <div key={id +  `_${index}`}>
                                     <input id={id + `_${index}` + "_0"}
                                            type="radio"
                                            name={id}
@@ -29,26 +57,10 @@ class Onelist extends Component{
                                     <label htmlFor={id + `_${index}` + "_0"}>
                                         {radio.title}
                                     </label>
-                                    <input id={id + `_${index}` + "_1"}
-                                           type="text"
-                                           placeholder={radio.title}
-                                    />
                                 </div>
                             )
-                        }
-                        return (
-                            <div key={id +  `_${index}`}>
-                                <input id={id + `_${index}` + "_0"}
-                                       type="radio"
-                                       name={id}
-                                       value={radio.title.toLowerCase()}
-                                />
-                                <label htmlFor={id + `_${index}` + "_0"}>
-                                    {radio.title}
-                                </label>
-                            </div>
-                        )
-                    })}
+                        })}
+                    </div>
                 </div>
             )
         } else {
