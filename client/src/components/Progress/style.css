@@ -35,7 +35,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: linear-gradient(to right, #f00, #ff0, #0f0);
+    background: linear-gradient(to right, #e74c3c, #f1c40f, #2ecc71);
 }
 .progress_rating input
 {
