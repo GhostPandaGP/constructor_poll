@@ -24,7 +24,7 @@ class Dropdownlist extends Component{
                     {<Subtitle data={this.props.data.subtitle.value}/>}
                     <div className="drop__down__list_select-wrapper">
                         <select multiple={false} className={"drop__down__list_select"}>
-                            {this.props.data.options.map((option, index) => {
+                            {this.props.data.options.elements.map((option, index) => {
                                 let id = "dropdownlist_" + this.props.index + `_${index}`;
                                 return <option value={option.title} key={id}>{option.title}</option>
                             })}

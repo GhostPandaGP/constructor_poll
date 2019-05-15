@@ -21,20 +21,24 @@ class Onelist extends Component{
                 <div>
                     <div className={"one__list_title"}>{this.props.data.title.value}</div>
                     {<Subtitle data={this.props.data.subtitle.value}/>}
-                    <div className={"one__list_radio_box"}>
+                    <ul className={"one__list_menu"}>
                         {this.props.data.options.map((radio, index) => {
                             let id = "onelist_" + this.props.id;
 
                             if (radio.title === "Other") {
                                 return (
-                                    <div key={id + `_${index}`}>
-                                        <input id={id + `_${index}` + "_0"}
-                                               type="radio"
-                                               name={id}
-                                               value={radio.title.toLowerCase()}
-                                        />
-                                        <label htmlFor={id + `_${index}` + "_0"}>
-                                            {radio.title}
+                                    <li className={"one__list_element"} key={id + `_${index}`}>
+                                        <label>
+                                            {/*<input id={id + `_${index}`} type="checkbox" name={id} value={option.title}/>*/}
+                                            <input id={id + `_${index}` + "_0"}
+                                                   type="radio"
+                                                   name={id}
+                                                   value={radio.title.toLowerCase()}
+                                            />
+                                            <span className={"one__list_element_icon"}> </span>
+                                            <span className={"one__list_element_list"}>
+                                                {radio.title}
+                                            </span>
                                         </label>
                                         <div className="one__list_radio_input_text_box">
                                             <input id={id + `_${index}` + "_1"}
@@ -43,24 +47,27 @@ class Onelist extends Component{
                                                    placeholder={radio.title}
                                             />
                                         </div>
-
-                                    </div>
+                                    </li>
                                 )
                             }
                             return (
-                                <div key={id +  `_${index}`}>
-                                    <input id={id + `_${index}` + "_0"}
-                                           type="radio"
-                                           name={id}
-                                           value={radio.title.toLowerCase()}
-                                    />
-                                    <label htmlFor={id + `_${index}` + "_0"}>
-                                        {radio.title}
+                                <li className={"one__list_element"} key={id +  `_${index}`}>
+                                    <label>
+                                        {/*<input id={id + `_${index}`} type="checkbox" name={id} value={option.title}/>*/}
+                                        <input id={id + `_${index}` + "_0"}
+                                               type="radio"
+                                               name={id}
+                                               value={radio.title.toLowerCase()}
+                                        />
+                                        <span className={"one__list_element_icon"}> </span>
+                                        <span className={"one__list_element_list"}>
+                                            {radio.title}
+                                        </span>
                                     </label>
-                                </div>
+                                </li>
                             )
                         })}
-                    </div>
+                    </ul>
                 </div>
             )
         } else {

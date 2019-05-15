@@ -1,5 +1,5 @@
 import React, { Component} from "react";
-import "./style1.css";
+import "./style.css";
 import Loader from "../Input";
 
 class Multilist extends Component{
@@ -11,20 +11,29 @@ class Multilist extends Component{
     }
     render() {
         if (this.props.data) {
+            const Subtitle = this.props.data.subtitle.value ?
+                (props) => {return (<div className={"multi__list_subtitle"}>{props.data}</div>)}  :
+                (props) => {console.warn("warn", props);
+                    return ""};
+
+            const styleIcon = "multi__list_icon_" + this.props.data.styles.type;
+            const styleList = "multi__list_list_" + this.props.data.styles.type;
+
             return (
                 <div>
                     {console.log(this.props.data)}
 
-                    <p>{this.props.data.title.value}</p>
-                    <ul>
-                        {this.props.data.options.map((option, index) => {
+                    <div className={"multi__list_title"}>{this.props.data.title.value}</div>
+                    {<Subtitle data={this.props.data.subtitle.value}/>}
+                    <ul className={"multi__list_menu"}>
+                        {this.props.data.options.elements.map((option, index) => {
                             let id = "multilist_" + this.props.index;
-                            return <li key={id + `_${index}`}>
+                            return <li className={"multi__list_element"} key={id + `_${index}`}>
                                 <label>
                                     {/*<input id={id + `_${index}`} type="checkbox" name={id} value={option.title}/>*/}
                                     <input type="checkbox" name={id} value={option.title}/>
-                                    <span className={"icon"}></span>
-                                    <span className={"list"}>{option.title}</span>
+                                    <span className={"multi__list_element_icon " + styleIcon}></span>
+                                    <span className={"multi__list_element_list " + styleList}>{option.title}</span>
                                 </label>
                             </li>
                         })}

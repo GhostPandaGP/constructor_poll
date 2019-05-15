@@ -4,12 +4,14 @@ const initialState = {
             {
                 type: "Dropdownlist",
                 data: {
-                    options: [
-                        {id: new Date(), title: "Title1"},
-                        {id: new Date(), title: "Title2"},
-                        {id: new Date(), title: "Title3"},
-                        {id: new Date(), title: "Title4"}
-                    ],
+                    options: {
+                        elements: [
+                            {id: new Date(), title: "Title1"},
+                            {id: new Date(), title: "Title2"},
+                            {id: new Date(), title: "Title3"},
+                            {id: new Date(), title: "Title4"}
+                        ]
+                    },
                     title: {value: "Title", styles: {}},
                     subtitle: {value: "subtitle", styles: {}},
                     styles: {}
@@ -30,15 +32,37 @@ const initialState = {
             {
                 type: "Multilist",
                 data: {
-                    options: [
-                        {id: new Date(), title: "Title1"},
-                        {id: new Date(), title: "Title2"},
-                        {id: new Date(), title: "Title3"},
-                        {id: new Date(), title: "Title4"}
-                    ],
+                    options: {
+                        elements: [
+                            {id: new Date(), title: "Title1"},
+                            {id: new Date(), title: "Title2"},
+                            {id: new Date(), title: "Title3"},
+                            {id: new Date(), title: "Title4"}
+                        ]
+                    },
                     title: {value: "Title", styles: {}},
                     subtitle: {value: "subtitle", styles: {}},
-                    styles: {}
+                    styles: {
+                        type: "consent"
+                    }
+                }
+            },
+            {
+                type: "Multilist",
+                data: {
+                    options: {
+                        elements: [
+                            {id: new Date(), title: "Title1"},
+                            {id: new Date(), title: "Title2"},
+                            {id: new Date(), title: "Title3"},
+                            {id: new Date(), title: "Title4"}
+                        ]
+                    },
+                    title: {value: "Title", styles: {}},
+                    subtitle: {value: "subtitle", styles: {}},
+                    styles: {
+                        type: "decline"
+                    }
                 }
             },
             {
