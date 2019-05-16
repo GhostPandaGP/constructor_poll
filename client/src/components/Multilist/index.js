@@ -20,7 +20,7 @@ class Multilist extends Component{
             const styleList = "multi__list_list_" + this.props.data.styles.type;
 
             return (
-                <div>
+                <div className={"multi__list_container"}>
                     {console.log(this.props.data)}
 
                     <div className={"multi__list_title"}>{this.props.data.title.value}</div>

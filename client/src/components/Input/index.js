@@ -44,7 +44,7 @@ class Input extends Component{
                     return ""};
 
             return (
-                <div>
+                <div className={"input_content"}>
                     {console.log("input - true - ", this.props.data)}
                     <div className={"input_label"}><label htmlFor={id}>{data.title.value}</label></div>
                     {<Subtitle data={this.props.data.subtitle.value}/>}

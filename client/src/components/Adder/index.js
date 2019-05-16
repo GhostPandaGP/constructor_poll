@@ -23,17 +23,21 @@ class Adder extends Component{
     }
 
     handleShow() {
-        return this.props.addElement({
-            type: "Onelist",
-            data: {
-                options: [
-                    {id: new Date(), title: "Male"},
-                    {id: new Date(), title: "FeMale"},
-                    {id: new Date(), title: "Other"}
-                ],
-                title: {value: "Title", styles: {}},
-                subtitle: {value: "subtitle", styles: {}},
-                styles: {}
+        return this.props.addElement(
+            {
+                index: 3,
+                data: {
+                    type: "Onelist",
+                    data: {
+                        options: [
+                            {id: new Date(), title: "Male"},
+                            {id: new Date(), title: "FeMale"},
+                            {id: new Date(), title: "Other"}
+                        ],
+                        title: {value: "Title", styles: {}},
+                        subtitle: {value: "subtitle", styles: {}},
+                        styles: {}
+                    }
             }
         });
     }
@@ -59,14 +63,34 @@ class Adder extends Component{
                                 Input
                             </button>
                         </div>
-                        <div className="adder-component">Textarea</div>
-                        <div className="adder-component">List</div>
-                        <div className="adder-component">Multilist</div>
-                        <div className="adder-component">Progress</div>
-                        <div className="adder-component">Drop-down list</div>
-                        <button onClick={this.handleClick}>
-                            button
-                        </button>
+                        <div className="adder-component">
+                            <button onClick={this.handleShow}>
+                                Textarea
+                            </button>
+                        </div>
+                        <div className="adder-component">
+                            <button onClick={this.handleShow}>
+                                List
+                            </button>
+                        </div>
+                        <div className="adder-component">
+                            <button onClick={this.handleShow}>
+                                Multilist
+                            </button>
+                        </div>
+                        <div className="adder-component">
+                            <button onClick={this.handleShow}>
+                                Progress
+                            </button>
+                        </div>
+                        <div className="adder-component">
+                            <button onClick={this.handleShow}>
+                                Drop-down list
+                            </button>
+                        </div>
+                        {/*<button onClick={this.handleClick}>*/}
+                            {/*button*/}
+                        {/*</button>*/}
                         {/*{console.log("check connect", this.props.stateComponents)}*/}
                     </div>
                     {/*<Modaltemplate show={this.state.showModal} >modal template</Modaltemplate>*/}

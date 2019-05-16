@@ -18,12 +18,12 @@ class Onelist extends Component{
                     return ""};
 
             return (
-                <div>
+                <div className={"one__list_container"}>
                     <div className={"one__list_title"}>{this.props.data.title.value}</div>
                     {<Subtitle data={this.props.data.subtitle.value}/>}
                     <ul className={"one__list_menu"}>
                         {this.props.data.options.map((radio, index) => {
-                            let id = "onelist_" + this.props.id;
+                            let id = "onelist_" + this.props.index;
 
                             if (radio.title === "Other") {
                                 return (

@@ -1,6 +1,7 @@
 .drop__down__list_wrapper
 {
     padding: 20px 0;
+    transition: .5s;
 }
 
 .drop__down__list_select-wrapper

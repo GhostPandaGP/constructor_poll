@@ -1,4 +1,9 @@
-.multi__list_menu
+.one__list_container
+{
+    transition: .5s;
+}
+
+.one__list_menu
 {
     margin: 0;
     padding: 10px 20px;
@@ -60,7 +65,7 @@
     transition-delay: .5s;
 }
 
-.one__list_element input[type="radio"]:checked ~ .multi__list_element_list:before
+.one__list_element input[type="radio"]:checked ~ .one__list_element_list:before
 {
     left: 100%;
     transition-delay: 0s;

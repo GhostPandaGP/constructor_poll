@@ -160,13 +160,17 @@ let initialState = {
 export default function surveyInfo(state = initialState, action) {
     switch (action.type) {
         case "SET_OBJECT":
+            // let components = [ ... state.stateComponents.components, action.payload];
             let components = state.stateComponents.components;
-            components.push(action.payload);
-            console.log("add components", components);
-            console.log("add action", action.payload);
-            const newState = {...state, components};
-            console.log("new state", newState);
-            return {...state, components};
+            components.splice(action.payload.index, 0, action.payload.data);
+            components.join();
+            //components.push(action.payload);
+            // console.log("add components", components);
+            // console.log("add action", action.payload);
+            // const newState = {...state, components};
+            // console.log("new state", newState);
+            // return {...state, components};
+            return {...state, stateComponents: {...state.stateComponents, components}};
         default:
             return state
     }
