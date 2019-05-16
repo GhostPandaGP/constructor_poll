@@ -163,7 +163,7 @@ export default function surveyInfo(state = initialState, action) {
             // let components = [ ... state.stateComponents.components, action.payload];
             let components = state.stateComponents.components;
             components.splice(action.payload.index, 0, action.payload.data);
-            components.join();
+            // components.join();
             //components.push(action.payload);
             // console.log("add components", components);
             // console.log("add action", action.payload);

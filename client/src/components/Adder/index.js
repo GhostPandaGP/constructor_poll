@@ -88,9 +88,9 @@ class Adder extends Component{
                                 Drop-down list
                             </button>
                         </div>
-                        {/*<button onClick={this.handleClick}>*/}
-                            {/*button*/}
-                        {/*</button>*/}
+                        <button onClick={this.handleClick}>
+                            button
+                        </button>
                         {/*{console.log("check connect", this.props.stateComponents)}*/}
                     </div>
                     {/*<Modaltemplate show={this.state.showModal} >modal template</Modaltemplate>*/}
