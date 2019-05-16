@@ -1,4 +1,4 @@
-const initialState = {
+let initialState = {
     stateComponents: {
         components: [
             {
@@ -157,6 +157,17 @@ const initialState = {
     }
 };
 
-export default function surveyInfo(state = initialState) {
-    return state
+export default function surveyInfo(state = initialState, action) {
+    switch (action.type) {
+        case "SET_OBJECT":
+            let components = state.stateComponents.components;
+            components.push(action.payload);
+            console.log("add components", components);
+            console.log("add action", action.payload);
+            const newState = {...state, components};
+            console.log("new state", newState);
+            return {...state, components};
+        default:
+            return state
+    }
 }

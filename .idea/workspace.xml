@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="521ecd95-0af3-48dd-a676-dd53e00067ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Modalswindows/Modaltemplate/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Modalswindows/Modaltemplate/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/actions/addObject.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Adder/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Adder/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Constructorlayout/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Constructorlayout/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Constructor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Constructor/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Modalswindows/Modaltemplate/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Modalswindows/Modaltemplate/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Modalswindows/Modaltemplate/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Modalswindows/Modaltemplate/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/info.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,23 +21,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/components/Modalswindows/Modaltemplate/index.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/reducers/info.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="468">
+              <caret line="168" column="41" selection-start-line="168" selection-start-column="41" selection-end-line="168" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/Modalswindows/Modaltemplate/style.css">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/components/Constructor/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="-1027">
+              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/Adder/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="18" selection-end-column="12" />
+            <state relative-caret-position="-2016">
+              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -57,10 +59,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>margin</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -94,13 +101,11 @@
         <option value="$PROJECT_DIR$/client/src/reducers/rootReducer.js" />
         <option value="$PROJECT_DIR$/client/src/components/Progress/style.css" />
         <option value="$PROJECT_DIR$/client/src/components/Dropdownlist/index.js" />
-        <option value="$PROJECT_DIR$/client/src/reducers/info.js" />
         <option value="$PROJECT_DIR$/client/src/components/Multilist/style1.css" />
         <option value="$PROJECT_DIR$/client/src/components/Multilist/index.js" />
         <option value="$PROJECT_DIR$/client/src/components/Multilist/style.css" />
         <option value="$PROJECT_DIR$/client/src/components/Onelist/index.js" />
         <option value="$PROJECT_DIR$/client/src/components/Onelist/style.css" />
-        <option value="$PROJECT_DIR$/client/src/components/Constructor/index.js" />
         <option value="$PROJECT_DIR$/client/src/components/Constructor/style.css" />
         <option value="$PROJECT_DIR$/client/src/containers/Result/style.css" />
         <option value="$PROJECT_DIR$/client/src/containers/options/index.js" />
@@ -111,14 +116,17 @@
         <option value="$PROJECT_DIR$/client/src/containers/Result/index.js" />
         <option value="$PROJECT_DIR$/client/src/components/Modalswindows/Modaltemplate/script.js" />
         <option value="$PROJECT_DIR$/client/src/components/Constructorlayout/style.css" />
-        <option value="$PROJECT_DIR$/client/src/components/Modalswindows/Modaltemplate/style.css" />
         <option value="$PROJECT_DIR$/client/src/components/Constructorlayout/index.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Adder/index.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Modalswindows/Modaltemplate/style.css" />
         <option value="$PROJECT_DIR$/client/src/components/Modalswindows/Modaltemplate/index.js" />
+        <option value="$PROJECT_DIR$/client/src/actions/addObject.js" />
+        <option value="$PROJECT_DIR$/client/src/reducers/info.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Adder/index.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Constructor/index.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="91" />
     <option name="y" value="7" />
     <option name="width" value="1243" />
@@ -132,6 +140,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,52 +179,12 @@
               <item name="constructor_poll" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Constructorlayout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="constructor_poll" type="b2602c69:ProjectViewProjectNode" />
-              <item name="constructor_poll" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Modalswindows" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="constructor_poll" type="b2602c69:ProjectViewProjectNode" />
-              <item name="constructor_poll" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="constructor_poll" type="b2602c69:ProjectViewProjectNode" />
-              <item name="constructor_poll" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="Options" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="constructor_poll" type="b2602c69:ProjectViewProjectNode" />
-              <item name="constructor_poll" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="Result" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="constructor_poll" type="b2602c69:ProjectViewProjectNode" />
-              <item name="constructor_poll" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -273,17 +242,18 @@
       <workItem from="1557915945452" duration="10341000" />
       <workItem from="1557945423809" duration="5609000" />
       <workItem from="1557997002686" duration="4345000" />
+      <workItem from="1558015277964" duration="10085000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82460000" />
+    <option name="totallyTimeSpent" value="92545000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="91" y="7" width="1243" height="763" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18755187" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14321926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -296,7 +266,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4254967" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3542781" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -332,13 +302,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/actions/surveys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -426,13 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/reducers/surveys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/Progress/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -464,13 +420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/reducers/info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="63" column="38" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -512,16 +461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
           <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Constructor/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="156" column="48" selection-start-line="156" selection-start-column="29" selection-end-line="156" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -612,29 +551,70 @@
     <entry file="file://$PROJECT_DIR$/client/src/components/Adder/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Adder/index.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Modalswindows/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Modalswindows/Modaltemplate/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="18" selection-end-column="12" />
+        <state relative-caret-position="230">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/Modalswindows/Modaltemplate/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="123">
+          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Modalswindows/Modaltemplate/index.js">
+    <entry file="file://$PROJECT_DIR$/client/src/reducers/surveys.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="138">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/actions/addObject.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/actions/surveys.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/reducers/info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="168" column="41" selection-start-line="168" selection-start-column="41" selection-end-line="168" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Adder/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2016">
+          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Constructor/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1027">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
