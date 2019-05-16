@@ -154,7 +154,7 @@ class Constructor extends Component{
 
     render() {
         return (
-            <div>
+            <div className={"constructor_wrapper"}>
                 {this.props.stateComponents.components.map((component, index) => {
                     switch (component.type) {
                         case "Dropdownlist":

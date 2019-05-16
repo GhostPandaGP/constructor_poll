@@ -1,6 +1,8 @@
 import React, { Component} from "react";
 import "./style.css";
 import Loader from "../Input";
+import {Link } from "react-router-dom";
+
 
 class Constructorlayout extends Component{
     constructor(props) {
@@ -18,13 +20,13 @@ class Constructorlayout extends Component{
                         </label>
                         <ul className={"constructor__layout_menu"}>
                             <li className={"constructor__layout_menu_element"}>
-                                <a href="#">Survey</a>
+                                <Link to={"survey"} className={"constructor__layout_menu_link"} >Survey</Link>
                             </li>
                             <li className={"constructor__layout_menu_element"}>
-                                <a href="#">Options</a>
+                                <Link to={"options"} className={"constructor__layout_menu_link"} >Options</Link>
                             </li>
                             <li className={"constructor__layout_menu_element"}>
-                                <a href="#">Result</a>
+                                <Link to={"result"} className={"constructor__layout_menu_link"} >Result</Link>
                             </li>
                             <label htmlFor="chk" className={"constructor__layout_hide-menu-btn"}>
                                 <i className={"fas fa-times"}> </i>
@@ -32,9 +34,7 @@ class Constructorlayout extends Component{
                         </ul>
                     </nav>
                     <main className={"constructor__layout_wrapper_main"}>
-                        <div className="constructor__layout_wrapper">
-                            {this.props.main}
-                        </div>
+                        {this.props.children}
                     </main>
                 </>
             )

@@ -8,3 +8,16 @@
     height: 30px;
     width: calc(100% / 6);
 }
+
+.constructor_wrapper
+{
+    width: 630px;
+    margin: auto;
+    border: 5px solid #2980b9;
+    border-top: 15px solid #2980b9;
+    /*border: 1px solid #000000;*/
+    /*border-radius: 20px;*/
+    padding: 40px 100px;
+    background: #eee;
+    /*box-shadow: 4px #000;*/
+}
