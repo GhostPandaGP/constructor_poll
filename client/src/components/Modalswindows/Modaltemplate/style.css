@@ -1,0 +1,20 @@
+.modal__template_menu
+{
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #333;
+    opacity: .9;
+    right: 0;
+    top: -120%;
+    text-align: center;
+    padding: 50px 0;
+    line-height: normal;
+    z-index: 1000;
+    transition: 0.7s;
+}
+.modal__template_show
+{
+    top: 0;
+}
